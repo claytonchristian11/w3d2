@@ -70,6 +70,9 @@ VALUES
   ((SELECT id FROM users WHERE fname = "Ned" AND lname = "Ruggeri"),
   (SELECT id FROM questions WHERE title = "Earl Question")),
 
+  ((SELECT id FROM users WHERE fname = "Ned" AND lname = "Ruggeri"),
+  (SELECT id FROM questions WHERE title = "Kush Question")),
+
   ((SELECT id FROM users WHERE fname = "Kush" AND lname = "Patel"),
   (SELECT id FROM questions WHERE title = "Earl Question")
 );
